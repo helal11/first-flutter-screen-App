@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.blue,
-          title: Text(
+          title: const Text(
             'sample App',
             style: TextStyle(color: Colors.white),
           ),
@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
             ),
             child: Column(
               children: [
-                Text(
+                const Text(
                   'TutorialKart',
                   style: TextStyle(
                     color: Colors.blue,
@@ -72,13 +72,13 @@ class MyApp extends StatelessWidget {
                 ),
                 ElevatedButton(
                   onPressed: () {},
-                  child: Text('Login'),
+                  child: const Text('Login'),
                 ),
-                Center(
+                const Center(
                   child: Center(
                     child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-
                         Text('Dose not have account ?'),
                         Text(
                           'Signin',
